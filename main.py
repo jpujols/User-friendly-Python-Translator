@@ -4,7 +4,7 @@ def vocabulary(word):
   try:
       return d[word]
   except KeyError:
-    return "That word does not exist."
+    return "We couldn't find that word!"
  
-word = input("Enter word: ")
+word = input("Enter word: ").lower()
 print(vocabulary(word))
